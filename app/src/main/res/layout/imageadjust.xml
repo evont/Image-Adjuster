@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/imV"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="24dp"
+    android:layout_centerHorizontal="true"
+    />
+
+    <SeekBar
+        android:id="@+id/seekHue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imV"
+        />
+    <SeekBar
+        android:id="@+id/seekSatraution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekHue"
+        />
+    <SeekBar
+        android:id="@+id/seekLum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekSatraution"
+        />
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekLum"
+        android:text="reset all"
+        android:onClick="seekreset"
+        />
+</RelativeLayout>
